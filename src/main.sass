@@ -1,0 +1,41 @@
+
+$headerHeight: 80px
+$bodyHeight: calc(100vh - 80px)
+
+@import reset
+@import './components/About/_about.sass'
+@import './components/Landing/_landing.sass'
+@import './components/themedButton/_themedButton.sass'
+.app
+    text-align: center
+    background: #afafaf
+a
+    color: #222
+    background: #eee
+    text-decoration: none
+    display: flex
+    align-items: center
+.content-container
+    background: #eee
+    max-width: 600px 
+    height: $bodyHeight
+    margin: 0 auto
+    text-align: left
+    padding: 0 1.5rem
+    h1
+        padding: .4rem 0 0 0
+    hr
+        margin: .5rem 0
+.app-header
+    height: $headerHeight
+    background: #222
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    nav
+        height: 30px
+        background: dodgerblue
+        display: flex
+        justify-content: space-around
+        align-items: stretch
